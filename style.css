@@ -1,0 +1,30 @@
+/*Estilo gerais da página*/
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/*Container da galeria usando Flexbox*/
+.gallery-container{
+    display:flex;/*Ativa o Flexbox*/
+    justify-content: space-around;/*Distribui os itens com espaço ao redor*/
+    flex-wrap:wrap;/*Permite que os itens quebrem linha se não couberem*/
+    padding: 20px;
+}
+
+/*cada item da galeria*/
+.gallery-item img{
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 350px;/*Define uma largura fixapara cada item */
+}
+
+/*Estilos para a imagem*/
+.gallery-item img{
+    width: 100%;/*garante que a imagem preenchatodo o espaço disponivel*/
+    height: auto;/*mantem a proporção da imagem*/
+}
